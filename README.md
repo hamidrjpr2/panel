@@ -1,6 +1,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/hamidrjpr2/business?style=flat&logo=star) ![GitHub language count](https://img.shields.io/github/languages/count/hamidrjpr2/business?color=%23c1121f) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/hamidrjpr2/business)
 
-# Business `Responsive`
+# Panel `Responsive`
 
 <h4 align="center">
   <span>Project Live Demo -> </span>
@@ -18,7 +18,7 @@
 <br>
 
 ## 📃Description
-  This page is build with tailwindcss.
+  This page is built with tailwindcss.
   
 <br>
 
