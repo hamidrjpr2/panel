@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+    <link rel="stylesheet" href="output.css ">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.css">
+    <script src="js/chart.js"></script>
+</head>
+
+<body>
+    <main id="menu2" class="flex w-ful bg-black box-border">
+        <aside class="w-0 lg:w-[240px] h-[100vh] pt-3">
+            hello
+        </aside>
+        <aside id="menu" class="duration-300 overflow-hidden z-[10000] w-0 lg:w-[240px] h-[100vh] pt-3 bg-[#262A2F] fixed">
+            <div class="text-center lg:hidden">
+                <i id="bars2" class="fa-solid fa-bars text-stone-300 text-4xl cursor-pointer mb-5"></i>
+            </div>
+            <div class="row justify-center">
+                <img src="img/logo.png" alt="logo" class="w-[120px]">
+            </div>
+            <!-- Lists of panel -->
+            <!-- list 1 -->
+            <div class="w-full px-1 mt-5">
+                <h5 class="text-white text-lg ml-2">Dashboard</h5>
+                <ul class="w-full ml-4 mt-3 *:text-slate-400 *:py-1 *:cursor-pointer">
+                    <li class="duration-300 hover:ml-4">Cards</li>
+                    <li class="duration-300 hover:ml-4">Statistics</li>
+                    <li class="duration-300 hover:ml-4">Sales</li>
+                    <li class="duration-300 hover:ml-4">Users</li>
+                    <li class="duration-300 hover:ml-4">Sale Forecast</li>
+                </ul>
+            </div>
+            <!-- list 2 -->
+            <div class="w-full px-1 mt-5">
+                <h5 class="text-white text-lg ml-2">Info</h5>
+                <ul class="w-full ml-4 mt-3 *:text-slate-400 *:py-1 *:cursor-pointer">
+                    <li class="duration-300 hover:ml-4">Adress</li>
+                    <li class="duration-300 hover:ml-4">Socials</li>
+                    <li class="duration-300 hover:ml-4">Phone</li>
+                </ul>
+            </div>
+            <!-- Descriptions -->
+            <div class="w-full px-1 mt-5">
+                <p class="text-stone-400 text-center px-1">
+                    Hello, I'm Hamid. As you've noticed I'm a junior front-end developer studying html,css and javascript and other staffs for fron-end. i hope you've liked my tailwindcss projects.
+                </p>
+            </div>
+        </aside>
+        <!-- end of the left nav menu -->
+        <section class="lg:w-[calc(100%-240px)] w-full h-[100vh] overflow-auto bg-[#1A1D21]">
+            <header class="w-full h-20 bg-[#262A2F] px-5">
+                <div class="row h-full items-center justify-between">
+                    <div class="flex items-center justify-start">
+                        <i id="bars" class="fa-solid fa-bars text-stone-300 text-4xl cursor-pointer"></i>
+                        <form action="search.php" class="w-60 relative lg:ml-4  hidden lg:block">
+                            <input type="text" placeholder="Search"
+                                class="w-full bg-white bg-opacity-20 p-2 pl-9 rounded-md text-white outline-none">
+                            <i
+                                class="fa-solid fa-magnifying-glass absolute text-stone-300 text-lg left-3 top-1/2 translate-y-[-50%]"></i>
+                        </form>
+                    </div>
+                    <div
+                        class="flex items-center h-full *:text-[#ffffffbd] *:mx-1 text-lg text-opacity-80 *:duration-[400ms]">
+                        <a href=""
+                            class="w-9 h-9 rounded-[50%] flex justify-center items-center bg-transparent hover:bg-[#ffffff2d] lg:hidden">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href=""
+                            class="w-9 h-9 rounded-[50%] flex justify-center items-center bg-transparent hover:bg-[#ffffff2d]">
+                            <i class="fa-solid fa-flag-usa"></i>
+                        </a>
+                        <a href=""
+                            class="w-9 h-9 rounded-[50%] flex justify-center items-center bg-transparent hover:bg-[#ffffff2d]">
+                            <i class="fa-solid fa-shapes"></i>
+                        </a>
+                        <a href=""
+                            class="w-9 h-9 rounded-[50%] flex justify-center items-center bg-transparent hover:bg-[#ffffff2d]">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                        <a href=""
+                            class="w-9 h-9 rounded-[50%] hidden sm:flex justify-center items-center bg-transparent hover:bg-[#ffffff2d]">
+                            <i class="fa-solid fa-crop-simple"></i>
+                        </a>
+                        <a href=""
+                            class="w-9 h-9 rounded-[50%] hidden sm:flex justify-center items-center bg-transparent hover:bg-[#ffffff2d]">
+                            <i class="fa-regular fa-sun"></i>
+                        </a>
+                        <a href=""
+                            class="w-9 h-9 rounded-[50%] flex justify-center items-center bg-transparent hover:bg-[#ffffff2d]">
+                            <i class="fa-regular fa-bell"></i>
+                        </a>
+                        <figure
+                            class="h-full flex xl:w-36 w-16 bg-white bg-opacity-10 mx-[0!important] relative items-center justify-center xl:justify-normal">
+                            <img src="img/avatar-1.jpg" alt="" class="rounded-[50%] w-8 h-8 mx-2">
+                            <div class="hidden xl:block text-center mx-2">
+                                <figcaption class="text-sm">Anna Adame</figcaption>
+                                <figcaption class="text-xs">ّFounder</figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </header>
+            <div class="crm bg-[#212529] h-11 flex items-center justify-between px-5">
+                <h3 class="text-lg font-bold text-white">CRM</h3>
+                <div class="*:mx-1 *:text-white [&>*:last-of-type]:text-gray-500 flex">
+                    <h4 class="group">Dashboard</h4>
+                    <span>-></span>
+                    <h4 class="group">CRM</h4>
+                </div>
+            </div>
+            <!-- all things sections -->
+            <div class="w-full p-5">
+                <!-- Cards row -->
+                <div class="row">
+                    <!-- Cards Start -->
+                    <div class="relative h-32 w-full md:w-1/3 xl:w-[20%]  text-white py-5 px-3 border-x bg-[#212529]">
+                        <i
+                            class="fa-solid fa-arrow-up text-green-600 absolute top-4 right-5 text-xs bg-green-600 bg-opacity-20 rounded-[50%] p-1"></i>
+                        <h5 class="text-sm mb-2 text-[#878a]">CAPMPAIGN SENT</h5>
+                        <div class="*:text-3xl">
+                            <i class="fa-brands fa-space-awesome mr-4"></i>
+                            <span class="">197</span>
+                        </div>
+                    </div>
+                    <!-- Cards Ending -->
+
+                    <!-- Cards Start2 -->
+                    <div class="relative h-32 w-full md:w-1/3 xl:w-[20%]  text-white py-5 px-3 border-x bg-[#212529]">
+                        <i
+                            class="fa-solid fa-arrow-up text-green-600 absolute top-4 right-5 text-xs bg-green-600 bg-opacity-20 rounded-[50%] p-1"></i>
+                        <h5 class="text-sm mb-2 text-[#878a]">ANNUAL PROFIT</h5>
+                        <div class="*:text-3xl">
+                            <i class="fa-solid fa-cash-register mr-4"></i>
+                            <span class="">$489.4K</span>
+                        </div>
+                    </div>
+                    <!-- Cards Ending2 -->
+
+                    <!-- Cards Start3 -->
+                    <div class="relative h-32 w-full md:w-1/3 xl:w-[20%]  text-white py-5 px-3 border-x bg-[#212529]">
+                        <i
+                            class="fa-solid fa-arrow-down text-yellow-600 absolute top-4 right-5 text-xs bg-yellow-600 bg-opacity-20 rounded-[50%] p-1"></i>
+                        <h5 class="text-sm mb-2 text-[#878a]">LEAD CONVERSATION</h5>
+                        <div class="*:text-3xl">
+                            <i class="fa-solid fa-wave-square mr-4"></i>
+                            <span class="">32.89%</span>
+                        </div>
+                    </div>
+                    <!-- Cards Ending3 -->
+
+                    <!-- Cards Start4 -->
+                    <div class="relative h-32 w-full md:w-1/3 xl:w-[20%]  text-white py-5 px-3 border-x bg-[#212529]">
+                        <i
+                            class="fa-solid fa-arrow-up text-green-600 absolute top-4 right-5 text-xs bg-green-600 bg-opacity-20 rounded-[50%] p-1"></i>
+                        <h5 class="text-sm mb-2 text-[#878a]">DAILY AVERAGE INCOME</h5>
+                        <div class="*:text-3xl">
+                            <i class="fa-solid fa-trophy mr-4"></i>
+                            <span class="">$1,596.5</span>
+                        </div>
+                    </div>
+                    <!-- Cards Ending4 -->
+
+                    <!-- Cards Start5 -->
+                    <div class="relative h-32 w-full md:w-1/3 xl:w-[20%]  text-white py-5 px-3 border-x bg-[#212529]">
+                        <i
+                            class="fa-solid fa-arrow-down text-yellow-600 absolute top-4 right-5 text-xs bg-yellow-600 bg-opacity-20 rounded-[50%] p-1"></i>
+                        <h5 class="text-sm mb-2 text-[#878a]">ANNUAL DEALS</h5>
+                        <div class="*:text-3xl">
+                            <i class="fa-solid fa-handshake-simple mr-4"></i>
+                            <span class="">32.89%</span>
+                        </div>
+                    </div>
+                    <!-- Cards Ending5 -->
+                </div>
+                <!-- Cards row ending -->
+            </div>
+            <div>
+                <div class="row">
+                    <!-- cards-part-2 card1 -->
+                    <div class="w-full md:w-6/12 2xl:w-3/12 p-2">
+                        <!-- cards-parts-2 card1 whole-body -->
+                        <div class="bg-[#212529] rounded-sm h-[370px]">
+                            <!-- card1 top div -->
+                            <div class="flex text-stone-300 justify-between px-3 border-b border-b-stone-400 py-2">
+                                <h4 class="text-lg">Sales Forecast</h4>
+                                <h5 class="">Sort By:</h5>
+                            </div>
+                            <!-- card1 bottom-div -->
+                            <div class="py-1 flex justify-center mt-4 flex-wrap">
+                                <!-- card1 bottom-div table -->
+                                <div class="h-[250px] w-11/12 flex">
+                                    <!-- card1 bottom-div left-side  -->
+                                    <div class="w-[14%] mx-1">
+                                        <div class="w-full h-full *:text-xs *:absolute text-stone-400 relative">
+                                            <span class="top-0">$37K</span>
+                                            <span class="top-[25%]">$27.75K</span>
+                                            <span class="top-[50%]">$18.5K</span>
+                                            <span class="top-[75%]">9.2K</span>
+                                            <span class="bottom-0">$0K</span>
+                                        </div>
+                                    </div>
+                                    <!-- card1 bottom-div right side  -->
+                                    <div class="w-[86%] mx-1">
+                                        <div
+                                            class="h-full w-full flex relative items-end justify-center *:flex *:justify-center *:items-center *:text-white *:duration-500">
+                                            <div class="h-full w-14 bg-[#4B38B3] hover:bg-[#7D6EE4] mx-2 z-10">37</div>
+                                            <div class="h-1/4 w-14 bg-[#45CB85] hover:bg-[#78FEB3] mx-2 z-10">12</div>
+                                            <div class="h-1/2 w-14 bg-[#FFBE0B] hover:bg-[#FFF05C] mx-2 z-10">18</div>
+
+                                            <!-- lines -->
+                                            <span class="absolute w-full h-[2px] bg-white bg-opacity-25 top-0"></span>
+                                            <span
+                                                class="absolute w-full h-[2px] bg-white bg-opacity-25 top-[25%]"></span>
+                                            <span
+                                                class="absolute w-full h-[2px] bg-white bg-opacity-25 top-[50%]"></span>
+                                            <span
+                                                class="absolute w-full h-[2px] bg-white bg-opacity-25 top-[75%]"></span>
+                                            <span
+                                                class="absolute w-full h-[2px] bg-white bg-opacity-25 bottom-0"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full text-center mt-3 text-white text-xs">
+                                    <p class="text-white opacity-40">Total Forcasted Value</p>
+                                    <div class="flex justify-center mt-2">
+                                        <span class="flex items-center mx-2">
+                                            <div class="mr-1 w-3 h-3 rounded-sm bg-[#4B38B3]"></div>
+                                            <span>Goal</span>
+                                        </span>
+                                        <span class="flex items-center mx-2">
+                                            <div class="mr-1 w-3 h-3 rounded-sm bg-[#45CB85]"></div>
+                                            <span>Pendig Forcast</span>
+                                        </span>
+                                        <span class="flex items-center mx-2">
+                                            <div class="mr-1 w-3 h-3 rounded-sm bg-[#FFBE0B]"></div>
+                                            <span>Revenue</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cards-part-2 card2 -->
+                    <div class="w-full md:w-6/12 2xl:w-3/12 p-2">
+                        <!-- cards-part-2 card2 whole body -->
+                        <div class="bg-[#212529] rounded-sm h-[370px]">
+                            <!-- card2 top-div -->
+                            <div class="flex text-stone-300 justify-between px-3 border-b border-b-stone-400 py-2">
+                                <h4 class="text-lg">Deal Type</h4>
+                                <h5 class="">Sort By:</h5>
+                            </div>
+
+                            <!-- card2 bottom-figure -->
+                            <figure class="w-[300px] h-[300px] mx-auto">
+                                <img class="w-full h-full" src="img/card-statistics-1.JPG" alt="">
+                            </figure>
+                        </div>
+
+                    </div>
+                    <!-- cards-part-2 card3 -->
+                    <div class="w-full 2xl:w-6/12 p-2">
+                        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- cards-part-3 -->
+            <div class="my-10">
+                <div class="row px-5">
+                    <!-- cards-part-3 card-1 -->
+                    <div class="w-full xl:w-7/12 my-5 pr-4">
+                        <!-- cards-part-3 card-1 whole-body -->
+                        <div class="w-full bg-[#212529] overflow-x-auto">
+                            <!-- cards-part-3 card-1 whole-body top-part -->
+                            <div class="flex text-stone-300 justify-between px-3 py-2">
+                                <h4 class="text-lg">Deals Status</h4>
+                                <h5 class="">Sort By:</h5>
+                            </div>
+                            <div class="flex w-full">
+                                <!-- cards-part-3 card-1 whole-body bottom-table -->
+                                <table class="mt-5 w-full">
+                                    <!-- cards-part-3 card-1 whole-body bottom-table table-header -->
+                                    <thead class="text-slate-500 bg-[#282B2E] border-y border-y-[#fff3]">
+                                        <tr class="*:whitespace-nowrap *:p-3">
+                                            <th scope="col" class="text-left">Name</th>
+                                            <th scope="col" class="text-left">Last Contacted </th>
+                                            <th scope="col" class="text-left">Sales Representative</th>
+                                            <th scope="col" class="text-left">Status</th>
+                                            <th scope="col" class="text-left">Deal Value</th>
+                                        </tr>
+                                    </thead>
+                                    <!-- cards-part-3 card-1 whole-body bottom-table table-body -->
+                                    <tbody class="text-slate-300">
+                                        <!-- cards-part-3 card-1 whole-body bottom-table table-body row-1 -->
+                                        <tr class="*:whitespace-nowrap *:p-2 *:text-sm hover:bg-[#282C30]">
+                                            <td role="col" class="whitespace-nowrap">Absternet LLC</td>
+                                            <td class="">Sep 20, 2021</td>
+                                            <td class="flex items-center">
+                                                <img src="img/avatar-1.jpg" alt="pic" class="w-9 h-9 rounded-full mr-1">
+                                                <span>Donald Risher</span>
+                                            </td>
+                                            <td class="">
+                                                <span class="text-xs text-[#3ACB85] bg-[#2C433D] rounded p-1">Deal
+                                                    Won</span>
+                                            </td>
+                                            <td class="">$100.1K</td>
+                                        </tr>
+                                        <!-- cards-part-3 card-1 whole-body bottom-table table-body row-2 -->
+                                        <tr class="*:whitespace-nowrap *:p-2 *:text-sm hover:bg-[#282C30]">
+                                            <td class="">Raitech Soft</td>
+                                            <td class="">Sep 23, 2021</td>
+                                            <td class="flex items-center">
+                                                <img src="img/avatar-2.jpg" alt="pic" class="w-9 h-9 rounded-full mr-1">
+                                                <span>Sofia Cunha</span>
+                                            </td>
+                                            <td class="">
+                                                <span class="text-xs text-[#ffbe0b] bg-[#48412B] rounded p-1">Intro
+                                                    Call</span>
+                                            </td>
+                                            <td class="">$100.1K</td>
+                                        </tr>
+                                        <!-- cards-part-3 card-1 whole-body bottom-table table-body row-3 -->
+                                        <tr class="*:whitespace-nowrap *:p-2 *:text-sm hover:bg-[#282C30]">
+                                            <td class="">William PVT</td>
+                                            <td class="">Sep 27, 2021</td>
+                                            <td class=" flex items-center">
+                                                <img src="img/avatar-3.jpg" alt="pic" class="w-9 h-9 rounded-full mr-1">
+                                                <span>Luis Rocha</span>
+                                            </td>
+                                            <td class="">
+                                                <span
+                                                    class="text-xs text-[#f06548] bg-[#463434] rounded p-1">Stuck</span>
+                                            </td>
+                                            <td class="">$78.18K</td>
+                                        </tr>
+                                        <!-- cards-part-3 card-1 whole-body bottom-table table-body row-4 -->
+                                        <tr class="*:whitespace-nowrap *:p-2 *:text-sm hover:bg-[#282C30]">
+                                            <td class="">Loiusee LLP</td>
+                                            <td class="">Sep 30, 2021</td>
+                                            <td class=" flex items-center">
+                                                <img src="img/avatar-4.jpg" alt="pic" class="w-9 h-9 rounded-full mr-1">
+                                                <span>Vitoria Rodrigues</span>
+                                            </td>
+                                            <td class="">
+                                                <span class="text-xs text-[#3ACB85] bg-[#2C433D] rounded p-1">Deal
+                                                    Won</span>
+                                            </td>
+                                            <td class="">$180K</td>
+                                        </tr>
+                                        <!-- cards-part-3 card-1 whole-body bottom-table table-body row-5 -->
+                                        <tr class="*:whitespace-nowrap *:p-2 *:text-sm hover:bg-[#282C30]">
+                                            <td class="">Apple Inc.</td>
+                                            <td class="">Sep 30, 2021</td>
+                                            <td class="flex items-center">
+                                                <img src="img/avatar-1.jpg" alt="pic" class="w-9 h-9 rounded-full mr-1">
+                                                <span>Vitoria Rodrigues</span>
+                                            </td>
+                                            <td class="">
+                                                <span class="text-xs text-[#299cdb] bg-[#299cdb26] rounded p-1">New
+                                                    Lead</span>
+                                            </td>
+                                            <td class="">$100.1K</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cards-part-3 card-2 -->
+                    <div class="w-full xl:w-5/12 my-5 pl-4">
+                        <!-- cards-part-3 card-2 whole-body -->
+                        <div class="w-full h-[374px] p-5 overflow-y-auto bg-[#212529]">
+                            <!-- cards-part-3 card-1 whole-body top-part -->
+                            <div class="flex text-stone-300 justify-between px-3 py-2 border-b border-b-[#ffffff38]">
+                                <h4 class="text-lg">My Tasks
+                                </h4>
+                                <h5 class="">
+                                    <i class="fa-solid fa-gear"></i>
+                                    Setting
+                                </h5>
+                            </div>
+                            <!-- cards-part-3 card-1 whole-body bottom-part -->
+                            <div>
+                                <!-- cards-part-3 card-1 whole-body bottom-part first-row -->
+                                <div class="mb-2">
+                                    <div class="row px-2 py-3 justify-between text-white">
+                                        <h5 class="text-[#ffffff5c]">4 of 10 remaining</h5>
+                                        <a class="bg-[#45CB85] px-2 p-1 text-sm rounded-md hover:bg-[#77f4b4]" href="">+
+                                            Add Task</a>
+                                    </div>
+                                </div>
+                                <!-- cards-part-3 card-1 whole-body bottom-part lists -->
+                                <div>
+                                    <!-- cards-part-3 card-1 whole-body bottom-part lists list1 -->
+                                    <div class="flex flex-nowrap py-2 px-2">
+                                        <!-- cards-part-3 card-1 whole-body bottom-part lists rows left-container -->
+                                        <div class="flex items-center flex-grow">
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows check-div -->
+                                            <div class="mr-2 flex items-center">
+                                                <input type="checkbox"
+                                                    class="appearance-none cursor-pointer w-[19px] h-[19px] bg-[#262A2F] border border-[#ffffff6a] rounded-md checked:bg-[#4B38B3] checked:bg-[url(img/check.svg)] checked:bg-contain checked:bg-center"
+                                                    name="" id="chk1">
+                                            </div>
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows text -->
+                                            <div class="text-white">
+                                                <label for="chk1" class="text-sm cursor-pointer">Review and make sure nothing slips through cracks</label>
+                                            </div>
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows date -->
+                                        </div>
+                                        <div
+                                            class="text-[#878a99] flex items-center whitespace-nowrap">
+                                            <p class="text-sm">
+                                                15 Sep, 2021</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- cards-part-3 card-1 whole-body bottom-part lists list2 -->
+                                    <div class="flex flex-nowrap py-2 px-2">
+                                        <!-- cards-part-3 card-1 whole-body bottom-part lists rows left-container -->
+                                        <div class="flex items-center flex-grow">
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows check-div -->
+                                            <div class="mr-2 flex items-center">
+                                                <input type="checkbox"
+                                                    class="appearance-none cursor-pointer w-[19px] h-[19px] bg-[#262A2F] border border-[#ffffff6a] rounded-md checked:bg-[#4B38B3] checked:bg-[url(img/check.svg)] checked:bg-contain checked:bg-center"
+                                                    name="" id="chk2">
+                                            </div>
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows text -->
+                                            <div class="text-white">
+                                                <label for="chk2" class="text-sm cursor-pointer">Send meeting invites for sales upcampaign</label>
+                                            </div>
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows date -->
+                                        </div>
+                                        <div
+                                            class="text-[#878a99] flex items-center whitespace-nowrap">
+                                            <p class="text-sm">
+                                                20 Sep, 2021</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- cards-part-3 card-1 whole-body bottom-part lists list3 -->
+                                    <div class="flex flex-nowrap py-2 px-2">
+                                        <!-- cards-part-3 card-1 whole-body bottom-part lists rows left-container -->
+                                        <div class="flex items-center flex-grow">
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows check-div -->
+                                            <div class="mr-2 flex items-center">
+                                                <input type="checkbox"
+                                                    class="appearance-none cursor-pointer w-[19px] h-[19px] bg-[#262A2F] border border-[#ffffff6a] rounded-md checked:bg-[#4B38B3] checked:bg-[url(img/check.svg)] checked:bg-contain checked:bg-center"
+                                                    name="" id="chk3">
+                                            </div>
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows text -->
+                                            <div class="text-white">
+                                                <label for="chk3" class="text-sm cursor-pointer">Weekly closed sales won checking with sales team</label>
+                                            </div>
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows date -->
+                                        </div>
+                                        <div
+                                            class="text-[#878a99] flex items-center whitespace-nowrap">
+                                            <p class="text-sm">
+                                                24 Sep, 2021
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- cards-part-3 card-1 whole-body bottom-part lists list4 -->
+                                    <div class="flex flex-nowrap py-2 px-2">
+                                        <!-- cards-part-3 card-1 whole-body bottom-part lists rows left-container -->
+                                        <div class="flex items-center flex-grow">
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows check-div -->
+                                            <div class="mr-2 flex items-center">
+                                                <input type="checkbox"
+                                                    class="appearance-none cursor-pointer w-[19px] h-[19px] bg-[#262A2F] border border-[#ffffff6a] rounded-md checked:bg-[#4B38B3] checked:bg-[url(img/check.svg)] checked:bg-contain checked:bg-center"
+                                                    name="" id="chk4">
+                                            </div>
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows text -->
+                                            <div class="text-white">
+                                                <label for="chk4" class="text-sm cursor-pointer">Add notes that can be viewed from the individual view</label>
+                                            </div>
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows date -->
+                                        </div>
+                                        <div
+                                            class="text-[#878a99] flex items-center whitespace-nowrap">
+                                            <p class="text-sm">
+                                                27 Sep, 2021
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- cards-part-3 card-1 whole-body bottom-part lists list5 -->
+                                    <div class="flex flex-nowrap py-2 px-2">
+                                        <!-- cards-part-3 card-1 whole-body bottom-part lists rows left-container -->
+                                        <div class="flex items-center flex-grow">
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows check-div -->
+                                            <div class="mr-2 flex items-center">
+                                                <input type="checkbox"
+                                                    class="appearance-none cursor-pointer w-[19px] h-[19px] bg-[#262A2F] border border-[#ffffff6a] rounded-md checked:bg-[#4B38B3] checked:bg-[url(img/check.svg)] checked:bg-contain checked:bg-center"
+                                                    name="" id="chk5">
+                                            </div>
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows text -->
+                                            <div class="text-white">
+                                                <label for="chk5" class="text-sm cursor-pointer">Review and make sure nothing slips through cracks</label>
+                                            </div>
+                                            <!-- cards-part-3 card-1 whole-body bottom-part lists rows date -->
+                                        </div>
+                                        <div
+                                            class="text-[#878a99] flex items-center whitespace-nowrap">
+                                            <p class="text-sm">
+                                                27 Sep, 2021
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        let mainMenu = document.getElementById('menu')
+        let subMenu = document.getElementById('menu2')
+        let bars = document.getElementById('bars')
+        let bars2 = document.getElementById('bars2')
+
+        bars2.addEventListener('click', ()=>{
+            mainMenu.style.width = '0px'
+        })
+
+        bars.addEventListener('click', ()=>{
+            if(CheckWidth) {
+                mainMenu.style.width = '240px';
+            }
+        })
+
+        function CheckWidth () {
+            if(mainMenu.offsetWidth == 0) {
+                return true;
+            }
+        }
+        let check = mainMenu.offsetWidth;
+        console.log(check)
+    </script>
+
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</body>
+
+</html>
